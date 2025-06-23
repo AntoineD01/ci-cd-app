@@ -20,6 +20,7 @@ jobs:
           docker build -t ${{ secrets.DOCKER_USERNAME }}/ci-cd-app:frontend ./frontend
           docker build -t ${{ secrets.DOCKER_USERNAME }}/ci-cd-app:backend ./backend
 
+
       - name: Push Docker Images
         run: |
           docker push ${{ secrets.DOCKER_USERNAME }}/ci-cd-app:frontend
