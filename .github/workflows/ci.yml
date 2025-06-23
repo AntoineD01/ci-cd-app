@@ -39,4 +39,4 @@ jobs:
       - name: Build Docker Images
         run: |
           cd ../..
-          docker-compose build
+          docker compose build
