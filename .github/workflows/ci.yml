@@ -37,5 +37,5 @@ jobs:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
 
       - name: Build Docker Images
-        working-directory: ../
         run: docker compose build
+        working-directory: ${{ github.workspace }}
