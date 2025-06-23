@@ -30,7 +30,7 @@ jobs:
         run: npm audit --audit-level=high
 
       - name: Run Tests
-        run: npm test || echo "No tests defined"
+        run: npm test
 
       - name: Run Snyk Security Scan
         uses: snyk/actions/node@master
